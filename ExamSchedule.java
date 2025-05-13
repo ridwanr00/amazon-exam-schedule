@@ -23,8 +23,8 @@ public class ExamSchedule {
             prevExamNode.next = newExamNode;
             newExamNode.prev = prevExamNode;
     
-            System.out.println("Exam added: " + examDetails);
         }
+        System.out.println("Exam added: " + examDetails);
 
     }
 
