@@ -23,7 +23,7 @@ public class ExamSchedule {
             prevExamNode.next = newExamNode;
             newExamNode.prev = prevExamNode;
     
-            System.out.println("Exam " + examDetails + " has been added to exam schedule.");
+            System.out.println("Exam added: " + examDetails);
         }
 
     }
@@ -33,8 +33,8 @@ public class ExamSchedule {
         if (current == null) {
             System.out.println("No exams available.");
         } else {
-            if (current.next != null) {
-                System.out.println("Next exam: " + current.next.examDetails.toString());
+            if (current != null) {
+                System.out.println("Next exam: " + current.examDetails.toString());
                 current = current.next;
             } else {
                 System.out.println("There is no exam anymore.");
